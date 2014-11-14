@@ -29,7 +29,14 @@
     "grunt-contrib-concat": "~0.3.0",
     "grunt-sweet.js": "~0.1.4",
     "mocha": "^1.21.3",
-    "sweet.js": "~0.7.0"
+    "sweet.js": "~0.7.0",
+    "es6-shim": "x",
+    "es5-ext": "x",
+    "es6-map": "x",
+    "es6-set": "x",
+    "es6-symbol": "x",
+    "es6-iterator": "x",
+    "es6-template-strings": "x"
   },
   "tags": [
     "sweet-macros"

@@ -14,10 +14,13 @@ Currently implemented:
 
 TODO:
 
-* rest and default arguments
+* rest and default arguments [x]
 * spread operator for applying arguments
-* possibly limited `for of` support
-* possibly limited module support
+* `for of` support
+* module support [x]
+
+We need a standard way to use [es6-shims](https://gist.github.com/medikoo/102b7d0e697627133788)
+Whenever one of these "ES6 contructs" are encountered, we should include the shim at the top of the file and call that function.
 
 ## Using
 
