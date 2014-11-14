@@ -34,6 +34,30 @@ $ sjs -m es6-macros file.js
 If you pass `-c` to sjs along with `-o output.js`, it will generate a
 sourcemap so you get good debugging too!
 
+### Run tests
+
+The `package.json` file contains a `test` scripts entry which runs all tests.
+Simply run:
+
+`npm test`
+
+## Examples
+
+```js
+import { writeFile } from 'fs'; // var fs = require('fs'); writeFile = fs.writeFile
+import * as moment from 'moment'; // var moment = require('moment')
+
+function writeTime(filename) {
+  writeFile(filename, moment().format('hh:mm:ss'), () => console.log('Done'))
+}
+
+// export writeTime; // single exports don't work because Sweet.js itself uses `export`
+export default writeTime;
+export { writeTime };
+
+export var something = 'hello world'; // short form works with vars, functions and classes
+```
+
 ## Contributing
 
 To run the tests:

@@ -7,6 +7,9 @@
     "node": "*"
   },
   "main": "index",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --harmony -b -R tap tests"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/jlongster/es6-macros.git"
